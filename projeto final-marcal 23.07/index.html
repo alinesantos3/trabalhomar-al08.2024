@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/index.js" defer></script>
+  <title>Luxo Perfumado</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand
+        " href="index.html">Luxo Perfumado</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="formulario.html">Cadastre-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ofertas.html">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
+          <button type="button" class="btn btn-primary"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5000rem; --bs-btn-font-size: .75rem;">
+            Buscar
+          </button>
+        </form>
+        <a href="carrinho.html" id="cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/1banner.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/2bannes.webp" class="d-block w-100" alt="...">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="cards">
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="img/mal.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> <strong>Malbec </strong> 150 ml</p>
+          <p> R$ 190,00</p>
+          <a href="malbec.html" class="button_component">Comprar</a>
+        </div>
+      </div> -->
+      <div id="perfumes-container">
+        <card-item src="img/mal.jpg" title="Malbec" ml="150 ml" price="R$190,00"></card-item>
+        <card-item src="img/ely.webp" title="Ely" ml="150 ml" price="R$100,00"></card-item>
+        <card-item src="img/ferrarinovo.webp" title="Ferrari" ml="150 ml" price="R$250,00"></card-item>
+        <card-item src="img/ely.webp" title="Elysée" ml="150 ml" price="R$128,00"></card-item>
+        <card-item src="img/uomini.webp" title="Uomini" ml="150 ml" price="R$90,00"></card-item>
+        <card-item src="img/lily.webp" title="Lily" ml="150 ml" price="R$270,00"></card-item>
+        <card-item src="img/linterdit.webp" title="L'interdit" ml="150 ml" price="R$338,00"></card-item>
+        <card-item src="img/azzaro.webp" title="Azzaro" ml="150 ml" price="R$209,00"></card-item>
+        <card-item src="img/pop.webp" title="J'Adore" ml="150 ml" price="R$438,00"></card-item>
+        <card-item src="img/lemale.jpg" title="Le Male" ml="150 ml" price="R$415,00"></card-item>
+        <card-item src="img/myway.png" title="Armani" ml="150 ml" price="R$480,00"></card-item>
+        <card-item src="img/ZAAD.webp" title="Zaad" ml="150 ml" price="R$230,00"></card-item>
+      </div>      
+    <footer class="container-fluid bg-body-tertiary py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 align-self-center">
+            <div class="row">
+              <h1>Assine nossa Newsletter</h1>
+              <p>Assine nossa newsletter para ter acessos as informações em tempo real</p>
+              <div class="input-group">
+                <input type="text" class="form-control ml-4" placeholder="Digite seu e-mail aqui">
+                <div class="input-group-append ms-4">
+                  <button class="btn btn-primary btn-sm" type="button">Assinar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 mx-auto text-center">
+            <h2>Redes Sociais</h2>
+            <div class="social">
+              <a href="#"><i class="fa fa-facebook text-light" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram text-light" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
